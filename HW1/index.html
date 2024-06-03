@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="parallax">
+    <img src="img/hill1.png" id="hill1" alt="">
+    <img src="img/hill2.png" id="hill2" alt="">
+    <img src="img/hill3.png" id="hill3" alt="">
+    <img src="img/hill4.png" id="hill4" alt="">
+    <img src="img/hill5.png" id="hill5" alt="">
+    <img src="img/tree.png" id="tree" alt="">
+    <h2 class="texts" id="text">DATABASE HOMEWORK</h2>
+    <img src="img/leaf.png" id="leaf" alt="">
+    <img src="img/plant.png" id="plant" alt="">
+</section>
+
+<section class="sec">
+    <h2 class="texts">Function display</h2>
+    <div class="input-group">
+        <label>
+            <input type="search" placeholder="Search for disher">
+        </label>
+        <img src="img/search.png" alt="">
+    </div>
+    <div class="display">
+        <table id="data-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Dish Name</th>
+                <th>Price</th>
+                <th>MemberPrice</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <label for="id1"></label><input type="radio" class="id-radio" id="id1" name="id-radio-group"
+                                                    value="1" onclick="updateRadios()">
+                    <span class="id-number">1</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id2"></label><input type="radio" class="id-radio" id="id2" name="id-radio-group"
+                                                    value="2" onclick="updateRadios()">
+                    <span class="id-number">2</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id3"></label><input type="radio" class="id-radio" id="id3" name="id-radio-group"
+                                                    value="3" onclick="updateRadios()">
+                    <span class="id-number">3</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id4"></label><input type="radio" class="id-radio" id="id4" name="id-radio-group"
+                                                    value="4" onclick="updateRadios()">
+                    <span class="id-number">4</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id5"></label><input type="radio" class="id-radio" id="id5" name="id-radio-group"
+                                                    value="5" onclick="updateRadios()">
+                    <span class="id-number">5</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id6"></label><input type="radio" class="id-radio" id="id6" name="id-radio-group"
+                                                    value="6" onclick="updateRadios()">
+                    <span class="id-number">6</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id7"></label><input type="radio" class="id-radio" id="id7" name="id-radio-group"
+                                                    value="7" onclick="updateRadios()">
+                    <span class="id-number">7</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id8"></label><input type="radio" class="id-radio" id="id8" name="id-radio-group"
+                                                    value="8" onclick="updateRadios()">
+                    <span class="id-number">8</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id9"></label><input type="radio" class="id-radio" id="id9" name="id-radio-group"
+                                                    value="9" onclick="updateRadios()">
+                    <span class="id-number">9</span>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="member_container">
+        <button class="round-button" id="add">+</button>
+        <button class="edit-button" id="edit">Edit</button>
+        <button class="delete-button" id="delete">Delete</button>
+    </div>
+</section>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">×</span>
+        <form id="addForm">
+            <div>
+                <label for="dishName">Dish Name:</label>
+                <input type="text" id="dishName" name="dishName">
+            </div>
+            <div>
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price">
+            </div>
+            <div>
+                <label for="memberPrice">Member Price:</label>
+                <input type="text" id="memberPrice" name="memberPrice">
+            </div>
+            <input type="submit" value="Submit">
+            <img src="img/tree.png" id="_tree" alt="">
+            <img src="img/leaf.png" id="_leaf" alt="">
+            <img src="img/plant.png" id="_plant" alt="">
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
