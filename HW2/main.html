@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>百味食府</title>
+</head>
+
+<body>
+
+<div class="tab middle">
+    <img id="middle-img" src="images/01.png" alt="">
+    <button style="--angle:0deg" class="add" id="allDishes">
+        <img class="icon" src="images/all.png" alt="" id="">
+        <span class="text">全部菜品</span>
+    </button>
+    <button style="--angle:60deg" class="add" id="specialDish">
+        <img class="icon" src="images/special.png" alt="">
+        <span class="text">特色菜</span>
+    </button>
+    <button style="--angle:120deg" class="add" id="dessert">
+        <img class="icon" src="images/dessert.png" alt="">
+        <span class="text">甜品</span>
+    </button>
+    <button style="--angle:180deg" class="add" id="drink">
+        <img class="icon" src="images/drink.png" alt="">
+        <span class="text">饮料</span>
+    </button>
+    <button style="--angle:240deg" class="add" id="order">
+        <img class="icon" src="images/order.png" alt="">
+        <span class="text">订单</span>
+    </button>
+    <button style="--angle:300deg" class="add" id="member">
+        <img class="icon" src="images/member.png" alt="">
+        <span class="text">会员</span>
+    </button>
+</div>
+
+<div id="table-container">
+    <table id="menu-table">
+        <thead id="table-head">
+        <tr>
+            <th>菜品名称</th>
+            <th>价格</th>
+            <th>会员价格</th>
+            <th>购买数量</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+<button id="confirmButton">确定</button>
+
+<div class="content-container">
+    <button id="closeOrder">
+        <img src="images/bookmark.png" alt="">
+    </button>
+    <div class="content"></div>
+</div>
+
+<div class='member_container'>
+    <button id="closeMember">
+        <img src="images/close.png" alt="">
+    </button>
+
+    <section class='card'>
+        <div class='card_inner'>
+            <div class='card_inner__circle'>
+                <img src='images/rocket.png' alt="">
+            </div>
+            <div class='card_inner__header'>
+                <img src='images/002-city-vector-background-town-vol2.jpg' alt="">
+            </div>
+            <div class='card_inner__content'>
+                <div class='title'>月度会员</div>
+                <div class='price'>￥119.99</div>
+                <div class='text'>购买月度会员小臭臭就可以和小香香亲亲</div>
+            </div>
+            <div class='card_inner__cta'>
+                <button id="month_member">立即购买</button>
+            </div>
+        </div>
+    </section>
+    <section class='card'>
+        <div class='card_inner'>
+            <div class='card_inner__circle'>
+                <img src='images/cog.png' alt="">
+            </div>
+            <div class='card_inner__header'>
+                <img src='images/item3.png' alt="">
+            </div>
+            <div class='card_inner__content'>
+                <div class='title'>季度会员</div>
+                <div class='price'>￥199.99</div>
+                <div class='text'>购买季度会员小臭臭就可以和小香香睡觉觉</div>
+            </div>
+            <div class='card_inner__cta'>
+                <button id="quarter_member">立即购买</button>
+            </div>
+        </div>
+    </section>
+    <section class='card'>
+        <div class='card_inner'>
+            <div class='card_inner__circle'>
+                <img src='images/paperplane.png' alt="">
+            </div>
+            <div class='card_inner__header'>
+                <img src='images/abstract-forest-landscape.jpg' alt="">
+            </div>
+            <div class='card_inner__content'>
+                <div class='title'>年度会员</div>
+                <div class='price'>￥289.99</div>
+                <div class='text'>购买年度会员小臭臭就可以和小香香爱爱</div>
+            </div>
+            <div class='card_inner__cta'>
+                <button id="year_member">立即购买</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
